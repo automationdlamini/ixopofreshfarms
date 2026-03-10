@@ -9,7 +9,7 @@
 
 <body>
 
-<header>
+<!-- <header>
 
 <div class="logo">
 <h2>Ixopo Fresh Farms</h2>
@@ -25,6 +25,34 @@
 </ul>
 </nav>
 
+</header> -->
+
+<header>
+
+<div class="logo">
+<h2>Ixopo Fresh Farms</h2>
+</div>
+
+<nav>
+
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<ul id="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="produce.html">Produce</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
 <section class="page-title">
@@ -36,17 +64,29 @@
 
 <section class="product-grid">
 
+
+    <!-- do like this for all the buttons so they anchor to the right gallery selection -->
 <div class="card">
 <h3>Butternut</h3>
 <p>Bulk orders available.</p>
-<button onclick="contact()">View Images</button>
+<a href="gallery.html#butternut">
+<button>View Images</button>
+</a>
 </div>
+
+
+
+
+<!-- add an anchor once we upload the images on gallery, like on the butternut section -->
 
 <div class="card">
 <h3>Cabbage</h3>
 <p>Commercial supply available.</p>
-<button onclick="contact()">View Images</button>
+<button>View Images</button>
 </div>
+
+
+<!-- add an anchor once we upload the images on gallery, like on the butternut section -->
 
 <div class="card">
 <h3>Spinach</h3>
@@ -59,6 +99,7 @@
 
 <footer>
 <p>© 2026 Ixopo Fresh Farms</p>
+<p> (developed by Nkululeko Dlamini 0765162191)</p>
 </footer>
 
 <script src="script.js"></script>
